@@ -4,15 +4,50 @@
 
     
   <url>
-    <loc>http://shanhestm.github.io/2016/06/01/git%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2016-06-01T10:51:20.042Z</lastmod>
+    <loc>http://shanhestm.github.io/2016/06/01/%E6%B5%8B%E8%AF%95%E9%A1%B5%E9%9D%A2-1/</loc>
+    <lastmod>2016-06-01T11:02:29.281Z</lastmod>
     <data>
         <display>
-        <title>git教程</title>
-        <pubTime>2016-06-01T10:51:16.000Z</pubTime>
+        <title>测试页面</title>
+        <pubTime>2016-06-01T11:01:36.000Z</pubTime>
         
          
            
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shanhestm.github.io/2016/06/01/%E6%B5%8B%E8%AF%95%E9%A1%B5%E9%9D%A2/</loc>
+    <lastmod>2016-06-01T10:59:40.063Z</lastmod>
+    <data>
+        <display>
+        <title>测试页面</title>
+        <pubTime>2016-06-01T10:57:45.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shanhestm.github.io/2016/06/01/git%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2016-06-01T10:57:12.185Z</lastmod>
+    <data>
+        <display>
+        <title>git教程</title>
+        <pubTime>2016-06-01T10:51:00.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="http://shanhestm.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+          
         </display>
     </data>
     </url>
