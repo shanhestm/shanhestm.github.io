@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>一杯清茶</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://shanhestm.github.io/"/>
+  <updated>2016-06-01T05:45:47.498Z</updated>
+  <id>http://shanhestm.github.io/</id>
+  
+  <author>
+    <name>再飞一会</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Echart</title>
+    <link href="http://shanhestm.github.io/2016/06/01/Echart-1/"/>
+    <id>http://shanhestm.github.io/2016/06/01/Echart-1/</id>
+    <published>2016-06-01T05:45:45.000Z</published>
+    <updated>2016-06-01T05:45:47.498Z</updated>
+    
+    <content type="html">&lt;div id=&quot;echarts6001&quot; style=&quot;width: 81%;height: 400px;margin: 0 auto&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById(&#39;echarts6001&#39;));
+
+        // 指定图表的配置项和数据
+        var option = {
+    tooltip : {
+        trigger: &#39;axis&#39;,
+        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+            type : &#39;shadow&#39;        // 默认为直线，可选为：&#39;line&#39; | &#39;shadow&#39;
+        }
+    },
+    legend: {
+        data:[&#39;利润&#39;, &#39;支出&#39;, &#39;收入&#39;]
+    },
+    grid: {
+        left: &#39;3%&#39;,
+        right: &#39;4%&#39;,
+        bottom: &#39;3%&#39;,
+        containLabel: true
+    },
+    xAxis : [
+        {
+            type : &#39;value&#39;
+        }
+    ],
+    yAxis : [
+        {
+            type : &#39;category&#39;,
+            axisTick : {show: false},
+            data : [&#39;周一&#39;,&#39;周二&#39;,&#39;周三&#39;,&#39;周四&#39;,&#39;周五&#39;,&#39;周六&#39;,&#39;周日&#39;]
+        }
+    ],
+    series : [
+        {
+            name:&#39;利润&#39;,
+            type:&#39;bar&#39;,
+            itemStyle : {
+                normal: {
+                    label: {show: true, position: &#39;inside&#39;}
+                }
+            },
+            data:[200, 170, 240, 244, 200, 220, 210]
+        },
+        {
+            name:&#39;收入&#39;,
+            type:&#39;bar&#39;,
+            stack: &#39;总量&#39;,
+            itemStyle: {
+                normal: {
+                    label : {show: true}
+                }
+            },
+            data:[320, 302, 341, 374, 390, 450, 420]
+        },
+        {
+            name:&#39;支出&#39;,
+            type:&#39;bar&#39;,
+            stack: &#39;总量&#39;,
+            itemStyle: {normal: {
+                label : {show: true, position: &#39;left&#39;}
+            }},
+            data:[-120, -132, -101, -134, -190, -230, -210]
+        }
+    ]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+&lt;/script&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;div id=&quot;echarts6001&quot; style=&quot;width: 81%;height: 400px;margin: 0 auto&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+        // 基于准备好的dom，初始化echar
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown语法说明</title>
+    <link href="http://shanhestm.github.io/2016/05/31/Markdown%E8%AF%AD%E6%B3%95%E8%AF%B4%E6%98%8E/"/>
+    <id>http://shanhestm.github.io/2016/05/31/Markdown语法说明/</id>
+    <published>2016-05-31T06:55:00.000Z</published>
+    <updated>2016-05-31T07:29:59.694Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://wowubuntu.com/markdown/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://wowubuntu.com/markdown/index.html&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://wowubuntu.com/markdown/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://wowubuntu.com/markdown/index.html&lt;/a&gt;&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="工具" scheme="http://shanhestm.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="markdown" scheme="http://shanhestm.github.io/tags/markdown/"/>
+    
+  </entry>
+  
+</feed>
