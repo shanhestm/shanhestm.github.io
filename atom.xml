@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://shanhestm.github.io/"/>
-  <updated>2016-06-01T05:45:47.498Z</updated>
+  <updated>2016-06-01T10:51:20.042Z</updated>
   <id>http://shanhestm.github.io/</id>
   
   <author>
@@ -16,16 +16,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>git教程</title>
+    <link href="http://shanhestm.github.io/2016/06/01/git%E6%95%99%E7%A8%8B/"/>
+    <id>http://shanhestm.github.io/2016/06/01/git教程/</id>
+    <published>2016-06-01T10:51:16.000Z</published>
+    <updated>2016-06-01T10:51:20.042Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001373962845513aefd77a99f4145f0a2c7a7ca057e7570000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001373962845513aefd77a99f4145f0a2c7a7ca057e7570000&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001373962845513aefd77a99f4145f0a2c7a7ca057e75
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Echart</title>
     <link href="http://shanhestm.github.io/2016/06/01/Echart-1/"/>
     <id>http://shanhestm.github.io/2016/06/01/Echart-1/</id>
     <published>2016-06-01T05:45:45.000Z</published>
     <updated>2016-06-01T05:45:47.498Z</updated>
     
-    <content type="html">&lt;div id=&quot;echarts2469&quot; style=&quot;width: 81%;height: 400px;margin: 0 auto&quot;&gt;&lt;/div&gt;
+    <content type="html">&lt;div id=&quot;echarts1435&quot; style=&quot;width: 81%;height: 400px;margin: 0 auto&quot;&gt;&lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById(&#39;echarts2469&#39;));
+        var myChart = echarts.init(document.getElementById(&#39;echarts1435&#39;));
 
         // 指定图表的配置项和数据
         var option = {
@@ -96,7 +115,7 @@
     
     <summary type="html">
     
-      &lt;div id=&quot;echarts2469&quot; style=&quot;width: 81%;height: 400px;margin: 0 auto&quot;&gt;&lt;/div&gt;
+      &lt;div id=&quot;echarts1435&quot; style=&quot;width: 81%;height: 400px;margin: 0 auto&quot;&gt;&lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
         // 基于准备好的dom，初始化echar
     
