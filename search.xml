@@ -4,21 +4,6 @@
   
     
     <entry>
-      <title><![CDATA[测试页面]]></title>
-      <url>http://shanhestm.github.io/2016/06/01/%E6%B5%8B%E8%AF%95%E9%A1%B5%E9%9D%A2-1/</url>
-      <content type="html"><![CDATA[<p>title: 测试页面</p>
-<h2 id="date-2015-12-03-00-00-00"><a href="#date-2015-12-03-00-00-00" class="headerlink" title="date: 2015-12-03 00:00:00"></a>date: 2015-12-03 00:00:00</h2><p>测试页面11111</p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[测试页面]]></title>
-      <url>http://shanhestm.github.io/2016/06/01/%E6%B5%8B%E8%AF%95%E9%A1%B5%E9%9D%A2/</url>
-      <content type="html"><![CDATA[<p>asdf</p>
-]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[git教程]]></title>
       <url>http://shanhestm.github.io/2016/06/01/git%E6%95%99%E7%A8%8B/</url>
       <content type="html"><![CDATA[<p><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001373962845513aefd77a99f4145f0a2c7a7ca057e7570000" target="_blank" rel="external">http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001373962845513aefd77a99f4145f0a2c7a7ca057e7570000</a></p>
@@ -28,10 +13,10 @@
     <entry>
       <title><![CDATA[Echart]]></title>
       <url>http://shanhestm.github.io/2016/06/01/Echart-1/</url>
-      <content type="html"><![CDATA[<div id="echarts8369" style="width: 81%;height: 400px;margin: 0 auto"></div>
+      <content type="html"><![CDATA[<div id="echarts19" style="width: 81%;height: 400px;margin: 0 auto"></div>
 <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts8369'));
+        var myChart = echarts.init(document.getElementById('echarts19'));
 
         // 指定图表的配置项和数据
         var option = {
