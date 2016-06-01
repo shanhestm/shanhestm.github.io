@@ -13,10 +13,10 @@
     <entry>
       <title><![CDATA[Echart]]></title>
       <url>http://shanhestm.github.io/2016/06/01/Echart-1/</url>
-      <content type="html"><![CDATA[<div id="echarts19" style="width: 81%;height: 400px;margin: 0 auto"></div>
+      <content type="html"><![CDATA[<div id="echarts32" style="width: 81%;height: 400px;margin: 0 auto"></div>
 <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts19'));
+        var myChart = echarts.init(document.getElementById('echarts32'));
 
         // 指定图表的配置项和数据
         var option = {
