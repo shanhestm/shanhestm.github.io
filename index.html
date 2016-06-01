@@ -60,7 +60,7 @@
           open_in_new: false,
           fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
           scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-          search: undefined
+          search: true
       }
   </script>
   
@@ -96,6 +96,13 @@
 
         
 
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" results="0" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
         
 
 
@@ -277,10 +284,10 @@
     <div class="article-entry" itemprop="articleBody">
 	 
         
-        <div id="echarts4707" style="width: 81%;height: 400px;margin: 0 auto"></div>
+        <div id="echarts7261" style="width: 81%;height: 400px;margin: 0 auto"></div>
 <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts4707'));
+        var myChart = echarts.init(document.getElementById('echarts7261'));
 
         // 指定图表的配置项和数据
         var option = {
@@ -351,10 +358,10 @@
 		
       
           
-        <div id="echarts4707" style="width: 81%;height: 400px;margin: 0 auto"></div>
+        <div id="echarts7261" style="width: 81%;height: 400px;margin: 0 auto"></div>
 <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts4707'));
+        var myChart = echarts.init(document.getElementById('echarts7261'));
 
         // 指定图表的配置项和数据
         var option = {
