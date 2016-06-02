@@ -233,7 +233,162 @@ var FlipClock;
 		 	if(typeof method === "function") {
 				var args = [];
 								
-				for(var x = 1; x <= 2013="" arguments.length;="" x++)="" {="" if(arguments[x])="" args.push(arguments[x]);="" }="" method.apply(this,="" args);="" },="" **="" *="" log="" a="" string="" into="" the="" console="" if="" it="" exists="" @param="" name="" of="" option="" @return="" mixed="" log:="" function(str)="" if(window.console="" &&="" console.log)="" console.log(str);="" get="" an="" single="" value.="" returns="" false="" does="" not="" exist="" getoption:="" function(index)="" if(this[index])="" return="" this[index];="" false;="" all="" options="" bool="" getoptions:="" function()="" this;="" set="" value="" setoption:="" function(index,="" value)="" this[index]="value;" multiple by="" passing="" json="" object="" with="" setoptions:="" function(options)="" for(var="" key="" in="" options)="" if(typeof="" options[key]="" !="=" "undefined")="" this.setoption(key,="" options[key]);="" });="" }(jquery));="" *jshint="" smarttabs:true="" flipclock.js="" @author="" justin="" kimbrell="" @copyright="" -="" objective="" html,="" llc="" @licesnse="" http:="" www.opensource.org="" licenses="" mit-license.php="" (function($)="" "use="" strict";="" flipclock="" face="" class="" is="" base="" which="" to="" extend="" other="" flockclock.face="" classes.="" parent="" flipclock.factory="" properties="" override="" default flipclock.face="FlipClock.Base.extend({" array="" jquery="" objects="" used="" for="" dividers="" (the="" colons)="" dividers:="" [],="" flipclock.list="" factory:="" false,="" lists:="" constructor="" constructor:="" function(factory,="" this.dividers="[];" this.lists="[];" this.base(options);="" this.factory="factory;" build="" clock="" build:="" {},="" creates="" digit="" divider="" label="" text="" true="" exclude="" dots="" divider.="" set,="" false.="" createdivider:="" function(label,="" css,="" excludedots)="" css="=" "boolean"="" ||="" !css)="" excludedots="css;" var="" '<span="">',
+				for(var x = 1; x <= arguments.length; x++) {
+					if(arguments[x]) {
+						args.push(arguments[x]);
+					}
+				}
+				
+				method.apply(this, args);
+			}
+		},
+		 
+		/**
+		 * Log a string into the console if it exists
+		 *
+		 * @param 	string 	The name of the option
+		 * @return	mixed
+		 */		
+		 
+		log: function(str) {
+			if(window.console && console.log) {
+				console.log(str);
+			}
+		},
+		 
+		/**
+		 * Get an single option value. Returns false if option does not exist
+		 *
+		 * @param 	string 	The name of the option
+		 * @return	mixed
+		 */		
+		 
+		getOption: function(index) {
+			if(this[index]) {
+				return this[index];
+			}
+			return false;
+		},
+		
+		/**
+		 * Get all options
+		 *
+		 * @return	bool
+		 */		
+		 
+		getOptions: function() {
+			return this;
+		},
+		
+		/**
+		 * Set a single option value
+		 *
+		 * @param 	string 	The name of the option
+		 * @param 	mixed 	The value of the option
+		 */		
+		 
+		setOption: function(index, value) {
+			this[index] = value;
+		},
+		
+		/**
+		 * Set a multiple options by passing a JSON object
+		 *
+		 * @param 	object 	The object with the options
+		 * @param 	mixed 	The value of the option
+		 */		
+		
+		setOptions: function(options) {
+			for(var key in options) {
+	  			if(typeof options[key] !== "undefined") {
+		  			this.setOption(key, options[key]);
+		  		}
+		  	}
+		}
+		
+	});
+	
+}(jQuery));
+
+/*jshint smarttabs:true */
+
+/**
+ * FlipClock.js
+ *
+ * @author     Justin Kimbrell
+ * @copyright  2013 - Objective HTML, LLC
+ * @licesnse   http://www.opensource.org/licenses/mit-license.php
+ */
+	
+(function($) {
+	
+	"use strict";
+	
+	/**
+	 * The FlipClock Face class is the base class in which to extend
+	 * all other FlockClock.Face classes.
+	 *
+	 * @param 	object  The parent FlipClock.Factory object
+	 * @param 	object  An object of properties to override the default	
+	 */
+	 
+	FlipClock.Face = FlipClock.Base.extend({
+		
+		/**
+		 * An array of jQuery objects used for the dividers (the colons)
+		 */
+		 
+		dividers: [],
+
+		/**
+		 * An array of FlipClock.List objects
+		 */		
+		 
+		factory: false,
+		
+		/**
+		 * An array of FlipClock.List objects
+		 */		
+		 
+		lists: [],
+
+		/**
+		 * Constructor
+		 *
+		 * @param 	object  The parent FlipClock.Factory object
+		 * @param 	object  An object of properties to override the default	
+		 */
+		 
+		constructor: function(factory, options) {
+			this.dividers = [];
+			this.lists = [];
+			this.base(options);
+			this.factory  = factory;
+		},
+		
+		/**
+		 * Build the clock face
+		 */
+		 
+		build: function() {},
+		
+		/**
+		 * Creates a jQuery object used for the digit divider
+		 *
+		 * @param	mixed 	The divider label text
+		 * @param	mixed	Set true to exclude the dots in the divider. 
+		 *					If not set, is false.
+		 */
+		 
+		createDivider: function(label, css, excludeDots) {
+		
+			if(typeof css == "boolean" || !css) {
+				excludeDots = css;
+				css = label;
+			}
+
+			var dots = [
+				'<span class="'+this.factory.classes.dot+' top"></span>',
 				'<span class="'+this.factory.classes.dot+' bottom"></span>'
 			].join('');
 
@@ -2674,4 +2829,3 @@ var FlipClock;
 	FlipClock.Lang['swedish'] = FlipClock.Lang.Swedish;
 
 }(jQuery));
-</=>
